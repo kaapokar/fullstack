@@ -25,7 +25,7 @@ const successStyle = {
         return null
       }
   
-      if (message.includes('removed')){
+      if (message.includes('removed') || message.includes('failed')){
         return (
           <div style={errorStyle} className="error">
             {message}
