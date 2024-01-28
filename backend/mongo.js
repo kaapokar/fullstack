@@ -10,7 +10,11 @@ const nameInput = process.argv[3]
 const numberInput = process.argv[4]
 
 const url =
+<<<<<<< HEAD
   'mongodb+srv://Kaapokar:<password>@kaapokar.qllncxb.mongodb.net/personApp?retryWrites=true&w=majority'
+=======
+  `mongodb+srv://Kaapokar:<password>@kaapokar.qllncxb.mongodb.net/personApp?retryWrites=true&w=majority`
+>>>>>>> 440088a6ee14a0f07a2e9d9da6ec58b3cddf09aa
 
 mongoose.set('strictQuery', false)
 mongoose.connect(url)
@@ -38,6 +42,10 @@ if ((nameInput !== undefined) && (numberInput !== undefined)) {
     result.forEach(person => {
       console.log(person.name + ' ' + person.number)
     })
+<<<<<<< HEAD
     mongoose.connection.close()
   })
 }
+=======
+}
+>>>>>>> 440088a6ee14a0f07a2e9d9da6ec58b3cddf09aa
