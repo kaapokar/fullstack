@@ -10,7 +10,7 @@ const nameInput = process.argv[3]
 const numberInput = process.argv[4]
 
 const url =
-  `mongodb+srv://Kaapokar:TakamineGX11@kaapokar.qllncxb.mongodb.net/personApp?retryWrites=true&w=majority`
+  `mongodb+srv://Kaapokar:<password>@kaapokar.qllncxb.mongodb.net/personApp?retryWrites=true&w=majority`
 
 mongoose.set('strictQuery', false)
 mongoose.connect(url)
